@@ -1,0 +1,93 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: whitesmoke;
+}
+.quiz-app_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quiz-app_modal {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 50px;
+    background: cadetblue;
+    border-radius: 8px;
+}
+
+.quiz-app_quation{
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 18px;
+    width: 100%;
+}
+
+.quiz-app_answers{
+    font-weight: bold;
+    width: 100%;
+}
+
+.ansBtn {
+    display: block;
+    margin: 20px 0px;
+    padding: 10px 16px;
+    background: white;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+}
+.ansBtn:hover:not([disabled]) {
+    background-color: gray;
+    color: white;
+    font-weight: 800;
+    transition: all .5s ease;
+}
+.ansBtn:disabled{
+    cursor: no-drop;
+    background: #c0bfbf;
+    color: white;
+    font-weight: 800;
+    transition: all .5s ease;
+}
+.ansBtn.correct {
+    background: mediumseagreen;
+    color: white;
+    font-weight: 800;
+    transition: all .5s ease;
+}
+.ansBtn.incorrect{
+    background: lightcoral;
+    color: white;
+    font-weight: 800;
+    transition: all .5s ease;
+}
+.nextBtn{
+    display: block;
+    background: #176B87;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.nextBtn:hover{
+    color: black;
+    font-weight: 800;
+    transition: all .5s ease;
+}
